@@ -1,0 +1,108 @@
+@charset "UTF_8";
+
+/* Escala de cores utilizadas neste projeto:
+#DEB887
+#FDF5E6
+#FFFFFF
+#A0522D
+*/
+
+
+/* root significa declarar variáveis para "armazenar cores", visando facilitar a colocação das cores*/
+:root {
+    --cor0:#DEB887;
+    --cor1:#FDF5E6;
+    --cor2:#FFFFFF;
+    --cor3:#A0522D;
+
+
+}
+
+/* 1º Procediento de projeto1: Para fazer as margens sumirem.*/
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+/* Cores sendo inseridas pelo nome da variável*/
+body {
+    background-color: var(--cor0);
+}
+
+/* 2º Procediento de projeto1: margens, bordas e definição de largura min e máx de telas. 320px e 800px*/
+main {
+    background-color: #FDF5E6;
+    padding: 20px;
+    border-radius: 10px;
+
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 3º Procediento de projeto1: Fazer as imagens ocuparem 100% do espaço determinado.*/
+    main img {
+        width: 100%;
+    }
+
+    main iframe {
+        width: 100%;
+    }
+
+    header {
+        background-color: var(--cor0);
+        min-height: 0.5px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        color:#FFFFFF;
+
+    }
+
+    nav {
+        background-color: var(--cor0);
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav > a {
+        color:#FFFFFF;
+        padding:  10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: 0.5s;
+
+    }
+
+    nav > a:hover {
+        background-color: var(--cor3);
+        color: var(--cor2);
+
+    }
+
+    main h1
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        color:#DEB887;
+    }
+    
+    main h1 {
+        color: var(--cor0);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    footer {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: var(--cor0);
+        padding: 5px;
+    }
